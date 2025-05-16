@@ -41,35 +41,35 @@ export default {
     {
       name: "company",
       items: [
-        { name: "about us", href: "https://www.creative-tim.com/presentation" },
-        { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
-        { name: "premium tools", href: "https://www.creative-tim.com/templates/premium" },
-        { name: "blog", href: "https://www.creative-tim.com/blog" },
+        { name: "about us", href: "#/presentation" },
+        { name: "freebies", href: "#/templates/free" },
+        { name: "premium tools", href: "#/templates/premium" },
+        { name: "blog", href: "#/blog" },
       ],
     },
     {
       name: "resources",
       items: [
-        { name: "illustrations", href: "https://iradesign.io/" },
-        { name: "bits & snippets", href: "https://www.creative-tim.com/bits" },
-        { name: "affiliate program", href: "https://www.creative-tim.com/affiliates/new" },
+        { name: "illustrations", href: "#" },
+        { name: "bits & snippets", href: "#/bits" },
+        { name: "affiliate program", href: "#/affiliates/new" },
       ],
     },
     {
       name: "help & support",
       items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "knowledge center", href: "https://www.creative-tim.com/knowledge-center" },
+        { name: "contact us", href: "#/contact-us" },
+        { name: "knowledge center", href: "#/knowledge-center" },
         { name: "custom development", href: "https://services.creative-tim.com/" },
-        { name: "sponsorships", href: "https://www.creative-tim.com/sponsorships" },
+        { name: "sponsorships", href: "#/sponsorships" },
       ],
     },
     {
       name: "legal",
       items: [
-        { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
-        { name: "privacy policy", href: "https://www.creative-tim.com/privacy" },
-        { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
+        { name: "terms & conditions", href: "#/terms" },
+        { name: "privacy policy", href: "#/privacy" },
+        { name: "licenses (EULA)", href: "#/license" },
       ],
     },
   ],
@@ -78,7 +78,7 @@ export default {
       All rights reserved. Copyright &copy; {date} SWACTech Team inspired by{" "}
       <MKTypography
         component="a"
-        href="https://www.creative-tim.com"
+        href="#"
         target="_blank"
         rel="noreferrer"
         variant="button"

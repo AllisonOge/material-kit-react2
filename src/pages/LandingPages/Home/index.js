@@ -14,12 +14,14 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Home page sections
 import LatestNews from "pages/LandingPages/Home/sections/LatestNews";
+import OurTechnology from "pages/LandingPages/Home/sections/OurTechnology";
+import Newsletter from "pages/LandingPages/Home/sections/Newsletter";
 
 // About Us page sections
 // import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
+// import Team from "pages/LandingPages/AboutUs/sections/Team";
+// import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
+// import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
 import routes from "routes";
@@ -117,8 +119,9 @@ function Home() {
       >
         <LatestNews />
         {/* <Information /> */}
-        <Team />
-        <Featuring />
+        <OurTechnology />
+        {/* <Team /> */}
+        {/* <Featuring /> */}
         <Newsletter />
       </Card>
       <MKBox pt={6} px={1} mt={6}>

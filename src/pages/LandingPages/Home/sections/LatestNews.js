@@ -27,7 +27,7 @@ function LatestNews() {
     }
   ]
   return (
-    <MKBox component="section" py={12}>
+    <MKBox component="section" pt={12}>
       <Container>
         <Grid container spacing={3} alignItems="center">
           <MKTypography
@@ -37,12 +37,13 @@ function LatestNews() {
           >
             Latest News
           </MKTypography>
+          <Grid item xs={12}>
           <Carousel
           next={ (next, active) => {/* Do stuff */} }
           prev={ (prev, active) => {/* Do other stuff */} }
           >
             {
-            latestBlogs.map((blog, i) => {
+            latestBlogs.map((blog, i) => (
               <BackgroundBlogCard
               key={i}
               image={blog.image}
@@ -50,9 +51,10 @@ function LatestNews() {
               description={blog.description}
               action={blog.action}
               />
-            })
-            }
+            ))
+          }
           </Carousel>
+          </Grid>
         </Grid>
       </Container>
     </MKBox>

@@ -29,31 +29,39 @@ import macbook from "assets/images/macbook.png";
 
 function Newsletter() {
   return (
-    <MKBox component="section" pt={6} my={6}>
+    <MKBox component="section" bgColor="black" py={12}>
       <Container>
         <Grid container alignItems="center">
-          <Grid item md={6} sx={{ ml: { xs: 0, lg: 3 }, mb: { xs: 12, md: 0 } }}>
-            <MKTypography variant="h4">Be the first to see the news</MKTypography>
-            <MKTypography variant="body2" color="text" mb={3}>
-              Your company may not be in the software business, but eventually, a software company
-              will be in your business.
-            </MKTypography>
+          <MKTypography
+          variant="h2"
+          color="white"
+          mb={2}
+          >
+            Help Shape the Future of Learning — Get Our AI Insights Free
+          </MKTypography>
             <Grid container spacing={1}>
-              <Grid item xs={8}>
-                <MKInput type="email" label="Email Here..." fullWidth />
+              <Grid item xs={6}>
+                <MKBox component="label" color="white">Name</MKBox>
+                <MKInput type="text" label="Name" fullWidth />
               </Grid>
-              <Grid item xs={4}>
-                <MKButton variant="gradient" color="info" sx={{ height: "100%" }}>
-                  Subscribe
+              <Grid item xs={6}>
+                <MKBox component="label" color="white">Email</MKBox>
+                <MKInput type="email" label="Email" fullWidth />
+              </Grid>
+              <Grid item xs={6}>
+                <MKBox component="label" color="white">Company</MKBox>
+                <MKInput type="text" label="Company" fullWidth />
+              </Grid>
+              <Grid item xs={6}>
+                <MKBox component="label" color="white">Position</MKBox>
+                <MKInput type="text" label="Position" fullWidth />
+              </Grid>
+              <Grid item xs={12} sx={{ display: "flex", justifyContent: "flex-end" }}>
+                <MKButton variant="contained" color="light" sx={{ height: "100%" }}>
+                  Submit
                 </MKButton>
               </Grid>
             </Grid>
-          </Grid>
-          <Grid item xs={12} md={5} sx={{ ml: "auto" }}>
-            <MKBox position="relative">
-              <MKBox component="img" src={macbook} alt="macbook" width="100%" />
-            </MKBox>
-          </Grid>
         </Grid>
       </Container>
     </MKBox>
