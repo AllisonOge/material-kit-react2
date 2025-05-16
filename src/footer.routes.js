@@ -9,7 +9,7 @@ import MKTypography from "components/MKTypography";
 
 // Images
 // import logoCT from "assets/images/logo-ct-dark.png";
-import logoCT from "assets/images/swactech-logo.png"
+import logoCT from "assets/images/swactech-logo.png";
 
 const date = new Date().getFullYear();
 

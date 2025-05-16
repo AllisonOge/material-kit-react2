@@ -25,43 +25,47 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 
 // Images
-import macbook from "assets/images/macbook.png";
+// import macbook from "assets/images/macbook.png";
 
 function Newsletter() {
   return (
     <MKBox component="section" bgColor="black" py={12}>
       <Container>
         <Grid container alignItems="center">
-          <MKTypography
-          variant="h2"
-          color="white"
-          mb={2}
-          >
+          <MKTypography variant="h2" color="white" mb={2}>
             Help Shape the Future of Learning — Get Our AI Insights Free
           </MKTypography>
-            <Grid container spacing={1}>
-              <Grid item xs={6}>
-                <MKBox component="label" color="white">Name</MKBox>
-                <MKInput type="text" label="Name" fullWidth />
-              </Grid>
-              <Grid item xs={6}>
-                <MKBox component="label" color="white">Email</MKBox>
-                <MKInput type="email" label="Email" fullWidth />
-              </Grid>
-              <Grid item xs={6}>
-                <MKBox component="label" color="white">Company</MKBox>
-                <MKInput type="text" label="Company" fullWidth />
-              </Grid>
-              <Grid item xs={6}>
-                <MKBox component="label" color="white">Position</MKBox>
-                <MKInput type="text" label="Position" fullWidth />
-              </Grid>
-              <Grid item xs={12} sx={{ display: "flex", justifyContent: "flex-end" }}>
-                <MKButton variant="contained" color="light" sx={{ height: "100%" }}>
-                  Submit
-                </MKButton>
-              </Grid>
+          <Grid container spacing={1}>
+            <Grid item xs={6}>
+              <MKBox component="label" color="white">
+                Name
+              </MKBox>
+              <MKInput type="text" label="Name" fullWidth />
             </Grid>
+            <Grid item xs={6}>
+              <MKBox component="label" color="white">
+                Email
+              </MKBox>
+              <MKInput type="email" label="Email" fullWidth />
+            </Grid>
+            <Grid item xs={6}>
+              <MKBox component="label" color="white">
+                Company
+              </MKBox>
+              <MKInput type="text" label="Company" fullWidth />
+            </Grid>
+            <Grid item xs={6}>
+              <MKBox component="label" color="white">
+                Position
+              </MKBox>
+              <MKInput type="text" label="Position" fullWidth />
+            </Grid>
+            <Grid item xs={12} sx={{ display: "flex", justifyContent: "flex-end" }}>
+              <MKButton variant="contained" color="light" sx={{ height: "100%" }}>
+                Submit
+              </MKButton>
+            </Grid>
+          </Grid>
         </Grid>
       </Container>
     </MKBox>

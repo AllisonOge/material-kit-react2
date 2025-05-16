@@ -1,7 +1,7 @@
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Carousel from 'react-material-ui-carousel'
+import Carousel from "react-material-ui-carousel";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -10,7 +10,7 @@ import MKBox from "components/MKBox";
 import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 
 // Assets
-import Illustration from "assets/images/illustrations/illustration-reset.jpg"
+import Illustration from "assets/images/illustrations/illustration-reset.jpg";
 import MKTypography from "components/MKTypography";
 
 function LatestNews() {
@@ -22,38 +22,36 @@ function LatestNews() {
       action: {
         type: "internal",
         route: "/blog/research-trends-n-innovation/",
-        label: "research"
-      }
-    }
-  ]
+        label: "research",
+      },
+    },
+  ];
   return (
     <MKBox component="section" pt={12}>
       <Container>
         <Grid container spacing={3} alignItems="center">
-          <MKTypography
-          variant="h3"
-          color="black"
-          mb={2}
-          >
+          <MKTypography variant="h3" color="black" mb={2}>
             Latest News
           </MKTypography>
           <Grid item xs={12}>
-          <Carousel
-          next={ (next, active) => {/* Do stuff */} }
-          prev={ (prev, active) => {/* Do other stuff */} }
-          >
-            {
-            latestBlogs.map((blog, i) => (
-              <BackgroundBlogCard
-              key={i}
-              image={blog.image}
-              title={blog.title}
-              description={blog.description}
-              action={blog.action}
-              />
-            ))
-          }
-          </Carousel>
+            <Carousel
+              next={() => {
+                /* Do stuff */
+              }}
+              prev={() => {
+                /* Do other stuff */
+              }}
+            >
+              {latestBlogs.map((blog, i) => (
+                <BackgroundBlogCard
+                  key={i}
+                  image={blog.image}
+                  title={blog.title}
+                  description={blog.description}
+                  action={blog.action}
+                />
+              ))}
+            </Carousel>
           </Grid>
         </Grid>
       </Container>

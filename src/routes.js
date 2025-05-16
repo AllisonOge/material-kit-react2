@@ -80,17 +80,17 @@ const routes = [
       {
         name: "software",
         description: "Get software",
-        component: <></>
+        component: <></>,
       },
       {
         name: "try for school",
         description: "Want one for your school?",
-        component: <></>
+        component: <></>,
       },
       {
         name: "try for business",
         description: "Let's make onboarding exciting",
-        component: <></>
+        component: <></>,
       },
     ],
   },

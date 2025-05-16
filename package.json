@@ -1,8 +1,9 @@
 {
-  "name": "material-kit-2-react",
-  "version": "2.1.0",
+  "name": "swactech",
+  "version": "0.1.0",
+  "homepage": "https://swactech.ng/",
   "private": true,
-  "author": "Creative Tim",
+  "author": "swactech",
   "license": "See license in https://www.creative-tim.com/license",
   "description": "React version of Material Kit 2 by Creative Tim",
   "bugs": {
@@ -24,6 +25,7 @@
     "@testing-library/user-event": "14.4.3",
     "chroma-js": "2.4.2",
     "flatpickr": "4.6.13",
+    "gh-pages": "^6.3.0",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
@@ -37,6 +39,8 @@
     "web-vitals": "3.3.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
