@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/static/js/main.9308bd2e.js",
+    "static/media/our_technology.png": "/static/media/our_technology.04375ef8cfbe24c0ff0e.png",
+    "static/media/illustration-reset.jpg": "/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
+    "static/media/bg-about-us.jpg": "/static/media/bg-about-us.cf9a123e2a3d371d53da.jpg",
+    "index.html": "/index.html",
+    "main.9308bd2e.js.map": "/static/js/main.9308bd2e.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9308bd2e.js"
+  ]
+}
