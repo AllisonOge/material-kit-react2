@@ -43,6 +43,8 @@ import Icon from "@mui/material/Icon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
+import HomePage from "layouts/pages/landing-pages/home";
+import BlogPage from "layouts/pages/landing-pages/blog";
 // import AboutUs from "layouts/pages/landing-pages/about-us";
 // import ContactUs from "layouts/pages/landing-pages/contact-us";
 // import Author from "layouts/pages/landing-pages/author";
@@ -72,6 +74,7 @@ const routes = [
   {
     name: "home",
     icon: <Icon>dashboard</Icon>,
+    component: <HomePage />,
   },
   {
     name: "products & services",
@@ -102,6 +105,7 @@ const routes = [
         name: "platform updates and announcements",
         description: "New feature rollouts; roadmap sneak-peeks and beta invites",
         route: "/blog/platform-updates-n-announcements/",
+        component: <BlogPage />,
       },
       {
         name: "research & innovation",
@@ -123,7 +127,7 @@ const routes = [
   {
     name: "github",
     icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    href: "https://github.com/swactech/swactech.github.io.git",
   },
 ];
 

@@ -21,8 +21,18 @@ function LatestNews() {
       description: "What's is personalized learning?",
       action: {
         type: "internal",
-        route: "/blog/research-trends-n-innovation/",
+        route: "/blog/research-n-innovation/",
         label: "research",
+      },
+    },
+    {
+      image: Illustration,
+      title: "Updates: MVP development commenced",
+      description: "What features should you look forward to?",
+      action: {
+        type: "internal",
+        route: "/blog/platform-updates-n-announcements/",
+        label: "updates",
       },
     },
   ];

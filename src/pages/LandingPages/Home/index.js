@@ -28,7 +28,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/hero-image.jpg";
 
 function Home() {
   return (
@@ -37,7 +37,7 @@ function Home() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
+          route: "https://github.com/swactech/swactech.github.io.git",
           label: "free download",
           color: "default",
         }}
@@ -71,19 +71,18 @@ function Home() {
             sx={{ mx: "auto", textAlign: "center" }}
           >
             <MKTypography
-              variant="h1"
+              variant="h2"
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
+                  fontSize: size["2xl"],
                 },
               })}
             >
-              Work with an amazing design
+              Your Personal Learning Coach, Anytime
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              Prep Better, Learn Faster, Achieve More
             </MKTypography>
             <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               Get started

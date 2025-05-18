@@ -1,6 +1,7 @@
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import Icon from "@mui/material/Icon";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -40,6 +41,30 @@ function OurTechnology() {
             <MKTypography variant="body1" color="black" mb={1}>
               We are validating this hypothesis through real&ndash;world pilots, continuously
               improving our technology to serve communities more effectively.
+            </MKTypography>
+            <MKTypography
+              component="a"
+              href="#"
+              variant="body1"
+              fontWeight="light"
+              color="info"
+              mt={3}
+              sx={{
+                width: "max-content",
+                display: "flex",
+                alignItems: "center",
+
+                "& .material-icons-round": {
+                  transform: `translateX(3px)`,
+                  transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
+                },
+
+                "&:hover .material-icons-round, &:focus .material-icons-round": {
+                  transform: `translateX(6px)`,
+                },
+              }}
+            >
+              Learn more <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
             </MKTypography>
           </Grid>
 
